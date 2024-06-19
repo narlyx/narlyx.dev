@@ -1,5 +1,5 @@
 {
-  "name": "narlyx.neocities.org",
+  "name": "narlyx.dev",
   "version": "1.0.0",
   "description": "My personal website",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/narlyx/narlyx.neocities.org.git"
+    "url": "git+https://github.com/narlyx/narlyx.dev.git"
   },
   "author": "Bunno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/narlyx/narlyx.neocities.org/issues"
+    "url": "https://github.com/narlyx/narlyx.dev/issues"
   },
-  "homepage": "https://github.com/narlyx/narlyx.neocities.org#readme"
+  "homepage": "https://github.com/narlyx/narlyx.dev#readme"
 }
