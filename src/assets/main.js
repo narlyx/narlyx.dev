@@ -131,9 +131,6 @@ function statusLoad() {
 statusLoad();
 setInterval(statusLoad,100);
 
-// Projects Updater Variables
-const githubUser = "narlyx";
-
 // Projects Updater Function
 function projectsLoad() {
     fetch("https://api.github.com/users/narlyx/repos")
@@ -147,7 +144,7 @@ function projectsLoad() {
             var repo = data[i];
 
             if(repo.id != 747917425) {
-                // Creating a new div
+                // Div
                 var newDiv = document.createElement("div");
 
                 // Title
@@ -157,11 +154,11 @@ function projectsLoad() {
 
                 // Description
                 var newDescription = document.createElement("p");
-                newDescription.innerText = repo.description;
+                newDescription.innerText = repo.description+" ";
 
                 // Link
                 var newLink = document.createElement("a");
-                newLink.innerText = " read more..."
+                newLink.innerText = "read more...";
                 newLink.href = repo.html_url;
                 newDescription.appendChild(newLink);
 
@@ -169,9 +166,48 @@ function projectsLoad() {
 
                 // Appending Projects
                 projectsElement.appendChild(newDiv)
+
+                // Line Break
+                var newBreak = document.createElement("br")
+                projectsElement.appendChild(newBreak);
             }
         }
     });
 }
 projectsLoad();
 
+// Changelog
+function changelogLoad() {
+fetch("https://api.github.com/repos/narlyx/narlyx.dev/commits")
+    .then(responce => responce.json())
+    .then(data=> {
+
+        var changelogElement = document.getElementById("changelog-container");
+        
+        // Looping though commits
+        for (i in data) {
+            var commitData = data[i];
+
+            // Div
+            var newDiv = document.createElement("div");
+
+            // Message
+            var newMessage = document.createElement("a");
+            newMessage.style.color = "var(--primary-color)"
+            newMessage.href = commitData.html_url;
+            newMessage.innerText = commitData.commit.message;
+
+            // Date
+            var newDate = document.createElement("span");
+            newDate.style.color = "white"
+            newDate.innerText = " — "+commitData.commit.author.date+" ";
+            newMessage.appendChild(newDate);
+
+            newDiv.appendChild(newMessage);
+
+            // Appending Changelog
+            changelogElement.appendChild(newDiv);
+        }
+    });
+}
+changelogLoad();

@@ -5,7 +5,7 @@
     --scanlines-gif: url("./scanlines.gif");
     --background-gif: url("./background.gif");
 
-    --prefered-width: 60%;
+    --prefered-width: 1024px;
     --minimum-width: 900px;
 }
 
@@ -93,6 +93,11 @@ h1 {
     color: white;
 }
 
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
 
 /* IDs */
 #header {
@@ -144,7 +149,7 @@ h1 {
     text-align: center;
     position: absolute;
     left: 43%;
-    top: 90px;
+    top: 80px;
     font-size: 16px;
     text-shadow: #000 2px 0px,#000 -2px 0px, #000 2px 2px, #000 -2px -2px,  #000 2px -2px,  #000 0px -2px, #000 0px 2px, #000 2px 0px, #000 -2px 2px;
     filter: drop-shadow(2px 2px #000)  drop-shadow(2px 2px #000);
