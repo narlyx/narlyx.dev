@@ -89,6 +89,10 @@ h1 {
     opacity: 1;
 }
 
+.inverted-link {
+    color: white;
+}
+
 
 /* IDs */
 #header {
@@ -98,28 +102,12 @@ h1 {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 2px;
-
-    h1 {
-        font-size: 70px;
-        margin: 0;
-        /*text-shadow: 2px 2px 10px var(--primary-color);*/
-    }
 }
 
 #main {
     min-width: var(--minimum-width);
     width: var(--prefered-width);
     margin: auto;
-}
-
-#navigation {
-    a {
-        color: white;
-    }
-    a:hover,
-    a:active {
-    color: var(--primary-color);
-    }
 }
 
 #copywrite {
