@@ -164,12 +164,12 @@ function projectsLoad() {
 
                 newDiv.appendChild(newDescription);
 
-                // Appending Projects
-                projectsElement.appendChild(newDiv)
-
                 // Line Break
                 var newBreak = document.createElement("br")
                 projectsElement.appendChild(newBreak);
+
+                // Appending Projects
+                projectsElement.appendChild(newDiv)
             }
         }
     });

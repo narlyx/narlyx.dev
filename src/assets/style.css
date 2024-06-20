@@ -127,6 +127,12 @@ h1 {
     padding: 0px 10px 0px 10px;
 }
 
+#footer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 #scrolling-bg {
     display: block;
     width: 100%;
