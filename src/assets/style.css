@@ -14,9 +14,9 @@
     font-family: "W95FA";
     src:
         url("./fonts/W95FA.eot?") format("eot"),
-        url("./fontsW95FA.woff") format("woff"),
-        url("./fontsW95FA.ttf") format("truetype"),
-        url("./fontsW95FA.svg#W95FARegular") format("svg");
+        url("./fonts/W95FA.woff") format("woff"),
+        url("./fonts/W95FA.ttf") format("truetype"),
+        url("./fonts/W95FA.svg#W95FARegular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -24,10 +24,10 @@
 @font-face {
     font-family: "PixelNES";
     src:
-        url("./fontsPixel_NES.eot?") format("eot"),
-        url("./fontsPixel_NES.woff") format("woff"),
-        url("./fontsPixel_NES.ttf") format("truetype"),
-        url("./fontsPixel_NES.svg#PixelNES") format("svg");
+        url("./fonts/Pixel_NES.eot?") format("eot"),
+        url("./fonts/Pixel_NES.woff") format("woff"),
+        url("./fonts/Pixel_NES.ttf") format("truetype"),
+        url("./fonts/Pixel_NES.svg#PixelNES") format("svg");
     font-weight: normal;
     font-style: normal;
 }
