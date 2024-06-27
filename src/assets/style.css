@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --primary-color: rgb(241, 160, 66);
-    
+
     --scanlines-img: url("./scanlines.png");
     --background-img: url("./background.gif");
 
@@ -13,10 +13,10 @@
 @font-face {
     font-family: "W95FA";
     src:
-        url("./W95FA.eot?") format("eot"),
-        url("./W95FA.woff") format("woff"),
-        url("./W95FA.ttf") format("truetype"),
-        url("./W95FA.svg#W95FARegular") format("svg");
+        url("./fonts/W95FA.eot?") format("eot"),
+        url("./fontsW95FA.woff") format("woff"),
+        url("./fontsW95FA.ttf") format("truetype"),
+        url("./fontsW95FA.svg#W95FARegular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -24,10 +24,10 @@
 @font-face {
     font-family: "PixelNES";
     src:
-        url(./Pixel_NES.eot?) format("eot"),
-        url(./Pixel_NES.woff) format("woff"),
-        url(../Pixel_NES.ttf) format("truetype"),
-        url(./Pixel_NES.svg#PixelNES) format("svg");
+        url("./fontsPixel_NES.eot?") format("eot"),
+        url("./fontsPixel_NES.woff") format("woff"),
+        url("./fontsPixel_NES.ttf") format("truetype"),
+        url("./fontsPixel_NES.svg#PixelNES") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ h1 {
     background-image: var(--scanlines-gif);
 }
 
-.box { 
+.box {
     background-color: black;
     outline: 1px solid rgb(65, 65, 65);
     padding: 10px;
@@ -97,7 +97,6 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
-
 
 /* IDs */
 #header {
@@ -170,11 +169,20 @@ h1 {
     left: 43%;
     top: 80px;
     font-size: 16px;
-    text-shadow: #000 2px 0px,#000 -2px 0px, #000 2px 2px, #000 -2px -2px,  #000 2px -2px,  #000 0px -2px, #000 0px 2px, #000 2px 0px, #000 -2px 2px;
-    filter: drop-shadow(2px 2px #000)  drop-shadow(2px 2px #000);
+    text-shadow:
+        #000 2px 0px,
+        #000 -2px 0px,
+        #000 2px 2px,
+        #000 -2px -2px,
+        #000 2px -2px,
+        #000 0px -2px,
+        #000 0px 2px,
+        #000 2px 0px,
+        #000 -2px 2px;
+    filter: drop-shadow(2px 2px #000) drop-shadow(2px 2px #000);
     animation: splash 1.5s infinite ease-in-out;
     z-index: 1;
-  }
+}
 
 #black-1 {
     display: block;
@@ -225,13 +233,13 @@ h1 {
 }
 @keyframes splash {
     0% {
-      transform: scaleX(1) scaleY(1) rotate(-3.5deg)
+        transform: scaleX(1) scaleY(1) rotate(-3.5deg);
     }
     50% {
-      transform: scaleX(0.9) scaleY(0.9) rotate(-3.5deg)
+        transform: scaleX(0.9) scaleY(0.9) rotate(-3.5deg);
     }
 
     100% {
-      transform: scaleX(1) scaleY(1) rotate(-3.5deg)
+        transform: scaleX(1) scaleY(1) rotate(-3.5deg);
     }
 }
