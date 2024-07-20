@@ -1,6 +1,10 @@
 /* Variables */
 :root {
-    --primary-color: rgb(241, 160, 66);
+    --primary-color: rgb(255, 255, 255);
+
+    --base-color: rgb(179, 179, 179);
+
+    --background-color: rgb(15, 15, 15);
 
     --scanlines-img: url("./scanlines.png");
     --background-img: url("./background.gif");
@@ -35,7 +39,7 @@
 /* Simple */
 body {
     font-family: "W95FA";
-    color: white;
+    color: var(--base-color);
     background-color: rgb(18, 18, 20);
     word-wrap: break-word;
 }
@@ -81,7 +85,7 @@ h1 {
 }
 
 .box {
-    background-color: black;
+    background-color: var(--background-color);
     outline: 1px solid rgb(65, 65, 65);
     padding: 10px;
     margin: 5px;
@@ -90,7 +94,7 @@ h1 {
 }
 
 .inverted-link {
-    color: white;
+    color: var(--base-color);
 }
 
 .vertical-text {
@@ -158,6 +162,7 @@ h1 {
     position: fixed;
     z-index: 100;
     opacity: 0.5;
+    pointer-events: none;
 }
 
 #splash {

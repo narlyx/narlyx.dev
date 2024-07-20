@@ -18,16 +18,13 @@ const generalPhrases = [
     "JUST ANGERR!",
     "GIMMI THAT SOCK, OM NOM NOM!",
     "Maw",
-    "Doing everything but make a website",
     "PAST THE POINT OF DELIRIUM",
     "My everything hurts.",
     "Are weee still friends",
-    "His name\'s... DOOM",
     "STAY IN DONT HELP YOURSELFF",
     "I use arch btw",
     "Vim > Emacs",
     "Relax, I don\'t got this.",
-    "127.0.0.1:3000/src/index.html",
     "Why can\'t we be frienndss",
     "Jeepers",
     "Yikes",
@@ -38,7 +35,9 @@ const generalPhrases = [
     "What\'s Unus Annus?",
     "A glorified linktree",
     "How to javascript?",
-    "Turtles :("
+    "Turtles :(",
+    "Wusyaname girllfriendd",
+    "Damn."
 ];
 
 // Returns randomized phrases
