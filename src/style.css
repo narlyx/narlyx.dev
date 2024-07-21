@@ -6,8 +6,8 @@
 
     --background-color: rgb(15, 15, 15);
 
-    --scanlines-img: url("./scanlines.png");
-    --background-img: url("./background.gif");
+    --scanlines-img: url("./assets/scanlines.png");
+    --background-img: url("./assets/background.gif");
 
     --prefered-width: 1024px;
     --minimum-width: 900px;
@@ -80,10 +80,6 @@ h1 {
 }
 
 /* Classes */
-.scan-bg {
-    background-image: var(--scanlines-gif);
-}
-
 .box {
     background-color: var(--background-color);
     outline: 1px solid rgb(65, 65, 65);
