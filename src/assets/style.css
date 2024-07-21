@@ -136,6 +136,12 @@ h1 {
     margin-bottom: 40px;
 }
 
+#changelog-container {
+    max-height: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 #scrolling-bg {
     display: block;
     width: 100%;
