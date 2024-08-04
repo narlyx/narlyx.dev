@@ -111,14 +111,14 @@ function statusLoad() {
       var spotify = data.data.spotify;
 
       // Settings Status Text
-      var statusTextElement = document.getElementById("status-text");
+      var statusBoolElement = document.getElementById("status-bool");
 
       if (status != "offline") {
-        statusTextElement.innerText = "ONLINE!";
-        statusTextElement.style.color = "lime";
+        statusBoolElement.innerText = "ONLINE!";
+        statusBoolElement.style.color = "lime";
       } else {
-        statusTextElement.innerText = "OFFLINE.";
-        statusTextElement.style.color = "orangered";
+        statusBoolElement.innerText = "OFFLINE.";
+        statusBoolElement.style.color = "orangered";
       }
 
       // Activities

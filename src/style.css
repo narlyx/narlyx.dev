@@ -219,7 +219,7 @@ h1 {
     text-align: center;
 }
 
-#status-text {
+#status-bool {
     font-size: 20px;
     font-weight: bolder;
     font-family: "PixelNES";
