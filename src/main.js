@@ -122,6 +122,9 @@ function statusLoad() {
       }
 
       // Activities
+      var actionTextElement = document.getElementById("action-text");
+      actionTextElement.style.display = "none";
+
       var activityTextElement = document.getElementById("activity-text");
       activityTextElement.style.display = "none";
 
@@ -136,6 +139,12 @@ function statusLoad() {
       if (activities.length > 0) {
         for (i in activities) {
           var activity = activities[i];
+
+          // Action Status Text
+          if (activity.type == 0) {
+            actionTextElement.style.display = "";
+            actionTextElement.innerText = "In " + activity.name;
+          }
 
           // Custom Status Text
           if (activity.type == 4) {
