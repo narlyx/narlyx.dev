@@ -125,8 +125,10 @@ function statusLoad() {
       var actionTextElement = document.getElementById("action-text");
       actionTextElement.style.display = "none";
 
-      var activityTextElement = document.getElementById("activity-text");
-      activityTextElement.style.display = "none";
+      var statusTextElement = document.getElementById("status-text");
+      statusTextElement.style.display = "none";
+      var statusDividerElement = document.getElementById("status-divider");
+      statusDividerElement.style.display = "none";
 
       var spotifyContainerElement =
         document.getElementById("spotify-container");
@@ -148,8 +150,9 @@ function statusLoad() {
 
           // Custom Status Text
           if (activity.type == 4) {
-            activityTextElement.style.display = "";
-            activityTextElement.innerText = activity.state + " 💬";
+            statusTextElement.style.display = "";
+            statusTextElement.innerText = activity.state + " 💬";
+            statusDividerElement.style.display = "";
           }
 
           // Spotify
