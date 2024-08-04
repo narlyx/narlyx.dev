@@ -151,7 +151,7 @@ function statusLoad() {
           // Custom Status Text
           if (activity.type == 4) {
             statusTextElement.style.display = "";
-            statusTextElement.innerText = activity.state + " 💬";
+            statusTextElement.innerText = '"' + activity.state + '" 💬';
             statusDividerElement.style.display = "";
           }
 
