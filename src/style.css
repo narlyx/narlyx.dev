@@ -178,14 +178,14 @@ h1 {
 }
 
 #splash {
-    width: 0px;
+    width: 500px;
     display: absolute;
     /*color: rgb(255, 230, 0);*/
     color: var(--secondary-color);
     text-wrap: nowrap;
     text-align: center;
     position: absolute;
-    left: -5%;
+    left: -95%;
     top: -5%;
     font-size: 16px;
     text-shadow:
