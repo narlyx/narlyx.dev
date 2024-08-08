@@ -39,8 +39,7 @@
 
         <div id="header">
             <div class="box">
-                <h1 style="font-size: 70px">N A R L Y X</h1>
-                <p id="splash"></p>
+                <h1 style="font-size: 70px; font-family: Cattedrale;">N A R L Y X</h1>
             </div>
         </div>
 
@@ -52,6 +51,7 @@
                         <p id="action-text"></p>
                         <hr id="status-divider" />
                         <p id="status-text"></p>
+                        <p id="splash"></p>
                     </div>
                     <div id="navigation" class="box">
                         <h1>//NAV</h1>
@@ -106,6 +106,33 @@
                         <br />
                         <a id="spotify-listen" href="">Listen to on Spotify</a>
                     </div>
+                    <marquee
+                        id="marquee-buttons"
+                        onmouseover="this.stop();"
+                        onmouseout="this.start();"
+                        direction="right">
+                        <a href="https://dimden.dev/"
+                            ><img src="./buttons/dimden.gif"
+                        /></a>
+                        <a href="https://melankorin.net/"
+                            ><img src="./buttons/melankorin1.gif"
+                        /></a>
+                        <a href="https://trick-916.neocities.org/"
+                            ><img src="./buttons/trick-916.gif"
+                        /></a>
+                        <a href="https://melankorin.net/"
+                            ><img src="./buttons/melankorin2.gif"
+                        /></a>
+                        <a href="https://nuthead.neocities.org/"
+                            ><img src="./buttons/nuthead.gif"
+                        /></a>
+                        <a href="https://colekaidos.neocities.org/"
+                            ><img src="./buttons/neonnook.gif"
+                        /></a>
+                        <a href="https://hijpixel.neocities.org/"
+                            ><img src="./buttons/hijpixel.gif"
+                        /></a>
+                    </marquee>
                     <div class="box" style="display: flex">
                         <iframe
                             width="180px"
@@ -134,6 +161,25 @@
                         <p>If you know me IRL... no you don't.</p>
                     </div>
                     <div class="box">
+                        <p>
+                            <span style="color: var(--primary-color);">Note: </span>
+                            This website utilizes heavy javascript (that is also terribly developed), so please disable your
+                            adblocker to prevent random bits of the website breaking. All "ads" that you will see are intentional,
+                            free, and purely for aesthetics.
+                        </p>
+                        <br>
+                        <p>
+                            Also, most data provided on this page are from external API's. if the website appears to be broken,
+                            don't balme me, either the API is down or you are rate limited. Some of these API's include: Github,
+                            Discord (via lanyard)
+                        </p>
+                        <br>
+                        <p>
+                            Finally, this website was intended to be viewed from a desktop computer with a horizontal display,
+                            if you are on mobile... goodluck.
+                        </p>
+                    </div>
+                    <div class="box">
                         <h1>//PROJECTS</h1>
                         <div id="projects-container"></div>
                     </div>
@@ -142,36 +188,6 @@
                         <br />
                         <div id="changelog-container"></div>
                     </div>
-                    <marquee
-                        id="marquee-buttons"
-                        onmouseover="this.stop();"
-                        onmouseout="this.start();"
-                    >
-                        <a href="https://dimden.dev/"
-                            ><img src="./buttons/dimden.gif"
-                        /></a>
-                        <a href="https://melankorin.net/"
-                            ><img src="./buttons/melankorin1.gif"
-                        /></a>
-                        <a href="https://trick-916.neocities.org/"
-                            ><img src="./buttons/trick-916.gif"
-                        /></a>
-                        <a href="https://melankorin.net/"
-                            ><img src="./buttons/melankorin2.gif"
-                        /></a>
-                        <a href="https://davemiller.neocities.org/"
-                            ><img src="./buttons/davemiller.gif"
-                        /></a>
-                        <a href="https://nuthead.neocities.org/"
-                            ><img src="./buttons/nuthead.gif"
-                        /></a>
-                        <a href="https://colekaidos.neocities.org/"
-                            ><img src="./buttons/neonnook.gif"
-                        /></a>
-                        <a href="https://hijpixel.neocities.org/"
-                            ><img src="./buttons/hijpixel.gif"
-                        /></a>
-                    </marquee>
                 </div>
             </div>
         </div>
