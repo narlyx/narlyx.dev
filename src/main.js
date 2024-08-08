@@ -245,10 +245,6 @@ function changelogLoad() {
 
         // Appending Changelog
         changelogElement.appendChild(newDiv);
-
-        // Line Break
-        var newBreak = document.createElement("br");
-        changelogElement.appendChild(newBreak);
       }
     });
 }
