@@ -232,13 +232,12 @@ function changelogLoad() {
 
         // Message
         var newMessage = document.createElement("a");
-        newMessage.style.color = "var(--primary-color)";
         newMessage.href = commitData.html_url;
         newMessage.innerText = commitData.commit.message;
 
         // Date
         var newDate = document.createElement("span");
-        newDate.style.color = "white";
+        newDate.className = "inverted-link";
         newDate.innerText = " — " + commitData.commit.author.date + " ";
         newMessage.appendChild(newDate);
 
@@ -246,6 +245,10 @@ function changelogLoad() {
 
         // Appending Changelog
         changelogElement.appendChild(newDiv);
+
+        // Line Break
+        var newBreak = document.createElement("br");
+        changelogElement.appendChild(newBreak);
       }
     });
 }

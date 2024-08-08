@@ -104,8 +104,9 @@ h1 {
     min-width: var(--minimum-width);
     width: var(--prefered-width);
     margin: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 2px;
+    position: relative;
 }
 
 #main {
@@ -169,12 +170,12 @@ h1 {
 
 #splash {
     width: 500px;
-    display: block;
+    display: absolute;
     color: rgb(255, 230, 0);
     text-align: center;
     position: absolute;
-    left: 43%;
-    top: 80px;
+    left: 55%;
+    top: 75%;
     font-size: 16px;
     text-shadow:
         #000 2px 0px,
