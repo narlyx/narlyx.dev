@@ -1,10 +1,14 @@
 /* Variables */
 :root {
     --primary-color: rgb(255, 255, 255);
+    --primary-color2: rgb(69, 69, 69);
 
     --base-color: rgb(179, 179, 179);
 
     --background-color: rgb(15, 15, 15);
+
+    --highlight-color1: rgb(65, 65, 65);
+    --highlight-color2: rgb(92, 92, 92);
 
     --scanlines-img: url("./assets/scanlines.png");
     --background-img: url("./assets/background.gif");
@@ -89,7 +93,7 @@ h1 {
 /* Classes */
 .box {
     background-color: var(--background-color);
-    outline: 1px solid rgb(65, 65, 65);
+    outline: 1px solid var(--highlight-color1);
     padding: 10px;
     margin: 5px;
     border-radius: 1px;
@@ -103,6 +107,26 @@ h1 {
 .vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+
+.flicker {
+    animation: blinking 0.11s infinite;
+}
+
+.flicker2 {
+    animation: blinking2 2s infinite;
+}
+
+.flicker3 {
+    animation: blinking2 7s infinite;
+}
+
+.flicker4 {
+    animation: blinking2 5s infinite; 
+}
+
+.flicker5 {
+    animation: blinking2 2.3s infinite; 
 }
 
 /* IDs */
@@ -262,4 +286,33 @@ h1 {
     100% {
         transform: scaleX(1) scaleY(1) rotate(-3.5deg);
     }
+}
+
+@keyframes blinking {
+	0%{ outline-color: var(--highlight-color1); }
+	100%{ outline-color: var(--highlight-color2); }
+}
+
+@keyframes blinking2 {
+	0%{ color: var(--primary-color); }
+    34%{ color: var(--primary-color); }
+    35%{ color: var(--primary-color2); }
+    36%{ color: var(--primary-color); }
+    96%{ color: var(--primary-color); }
+    97%{ color: var(--primary-color2); }
+    98%{ color: var(--primary-color); }
+    99%{ color: var(--primary-color2); }
+	100%{ color: var(--primary-color); }
+}
+
+@keyframes blinking3 {
+	0%{ color: var(--primary-color); }
+    74%{ color: var(--primary-color); }
+    75%{ color: var(--primary-color2); }
+    95%{ color: var(--primary-color2); }
+	96%{ color: var(--primary-color); }
+    97%{ color: var(--primary-color2); }
+    98%{ color: var(--primary-color); }
+    99%{ color: var(--primary-color2); }
+	100%{ color: var(--primary-color); }
 }
