@@ -129,6 +129,10 @@ h1 {
     animation: blinking2 2.3s infinite; 
 }
 
+.flicker6 {
+    animation: blinking4 10s infinite; 
+}
+
 /* IDs */
 #header {
     min-width: var(--minimum-width);
@@ -314,5 +318,24 @@ h1 {
     97%{ color: var(--primary-color2); }
     98%{ color: var(--primary-color); }
     99%{ color: var(--primary-color2); }
+	100%{ color: var(--primary-color); }
+}
+
+@keyframes blinking4 {
+	0%{ color: var(--primary-color); }
+    93%{ color: var(--primary-color); }
+    93.5%{ color: var(--primary-color2); }
+	94%{ color: var(--primary-color); }
+    94.5%{ color: var(--primary-color2); }
+	95%{ color: var(--primary-color); }
+    95.5%{ color: var(--primary-color2); }
+	96%{ color: var(--primary-color); }
+    96.5%{ color: var(--primary-color2); }
+	97%{ color: var(--primary-color); }
+    97.5%{ color: var(--primary-color2); }
+	98%{ color: var(--primary-color); }
+    98.5%{ color: var(--primary-color2); }
+	99%{ color: var(--primary-color); }
+    99.5%{ color: var(--primary-color2); }
 	100%{ color: var(--primary-color); }
 }
