@@ -26,8 +26,6 @@ const generalPhrases = [
   "Vim > Emacs",
   "Relax, I don't got this.",
   "Why can't we be frienndss",
-  "Jeepers",
-  "Yikes",
   "I hate javascript.",
   "React is for loosers",
   "Do people even read these?",
@@ -73,6 +71,13 @@ const octoberPhrases = [
   "BOO!",
   "BEST HOLLIDAY!",
   "Halloween noises.",
+  "Jeepers",
+  "Yikes",
+  "OoooOOoOOoOo",
+  "🎃",
+  "Halloween",
+  "Rahhhhh",
+  "Roarrr",
 ];
 
 // Getting current date and storing it
