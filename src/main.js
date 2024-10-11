@@ -199,7 +199,7 @@ function statusLoad() {
     });
 }
 statusLoad();
-setInterval(statusLoad, 100);
+setInterval(statusLoad, 5000);
 
 // Projects Updater Function
 function projectsLoad() {
