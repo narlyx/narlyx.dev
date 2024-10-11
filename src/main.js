@@ -56,19 +56,43 @@ const generalPhrases = [
   "GETTIN' TIRED OF BEING HAD",
   "THEY'RE GETTIGN TIRED OF ME BEING SAD",
   "Push your t3mpr",
-  "I've got your beat down to the PULSE",
   "I GOT CELLOPHANE WRAPPED AROUND THE LINING OF MY THROAT",
   "Roll the Katamari",
   "DOGMATICA",
   "SNAP OUT OF IT",
   "Teddy Picker",
   "You make me feel like a fooool",
+  "I don't practice Santeria!",
+  "FE!N FE!N FE!N",
+  "To me you mean the most babbbyyyy...",
+  "YOU ALLLREADYYY KNOOWWWW!",
 ];
+
+const octoberPhrases = [
+  "IS THE SPOOKY MONTH!",
+  "BOO!",
+  "BEST HOLLIDAY!",
+  "Halloween noises.",
+];
+
+// Getting current date and storing it
+var day;
+var month;
+
+day = new Date().getDay();
+month = new Date().getMonth() +1;
 
 // Returns randomized phrases
 function getPhrase() {
   var phrase;
-  phrase = generalPhrases[Math.floor(Math.random() * generalPhrases.length)];
+   
+  if (month == 10) {
+    phrase = octoberPhrases[Math.floor(Math.random() * octoberPhrases.length)];
+  }
+  else {
+    phrase = generalPhrases[Math.floor(Math.random() * generalPhrases.length)];
+  }
+  
   return phrase;
 }
 
