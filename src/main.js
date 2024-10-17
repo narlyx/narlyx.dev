@@ -74,10 +74,11 @@ const octoberPhrases = [
   "Jeepers",
   "Yikes",
   "OoooOOoOOoOo",
-  "🎃",
+  "🎃🎃🎃🎃",
   "Halloween",
   "Rahhhhh",
   "Roarrr",
+  "I'M NOT A FURRY, IS HALLOWEEN!"
 ];
 
 // Getting current date and storing it

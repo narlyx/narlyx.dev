@@ -4,7 +4,8 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "run": "bash pythonWebServer.sh"
   },
   "repository": {
     "type": "git",
