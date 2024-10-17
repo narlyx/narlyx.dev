@@ -52,12 +52,16 @@
         <div id="main">
             <div style="display: flex">
                 <div style="width: 25%">
-                    <div id="status-container" class="box flicker">
-                        <p>I'm <span id="status-bool">...</span></p>
-                        <p id="action-text"></p>
-                        <hr id="status-divider" />
-                        <p id="status-text"></p>
-                        <p id="splash"></p>
+                    <div style="display: flex" class="box flicker">
+                        <div style="width:25%" id="pfp-container">
+                            <p id="splash"></p>
+                            <img id="pfp"></img>
+                        </div>
+                        <div style="width:100%" id="status-container">
+                            <p>I'm <span id="status-bool">...</span></p>
+                            <p id="action-text"></p>
+                            <p id="status-text"></p>
+                        </div>
                     </div>
                     <div id="navigation" class="box flicker">
                         <h1>//NAV</h1>

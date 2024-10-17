@@ -139,6 +139,10 @@ function statusLoad() {
       var activities = data.data.activities;
       var spotify = data.data.spotify;
 
+      // Profile picture
+      var profilePictureElement = document.getElementById("pfp");
+      profilePictureElement.src = pfp;
+
       // Settings Status Text
       var statusBoolElement = document.getElementById("status-bool");
 
@@ -156,8 +160,6 @@ function statusLoad() {
 
       var statusTextElement = document.getElementById("status-text");
       statusTextElement.style.display = "none";
-      var statusDividerElement = document.getElementById("status-divider");
-      statusDividerElement.style.display = "none";
 
       var spotifyContainerElement =
         document.getElementById("spotify-container");
@@ -181,7 +183,6 @@ function statusLoad() {
           if (activity.type == 4) {
             statusTextElement.style.display = "";
             statusTextElement.innerText = '"' + activity.state + '" 💬';
-            statusDividerElement.style.display = "";
           }
 
           // Spotify
