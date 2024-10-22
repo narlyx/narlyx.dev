@@ -205,7 +205,7 @@ function musicLoad() {
     });
 }
 musicLoad();
-setInterval(musicLoad, 60*2); // Reload every 2 minutes
+setInterval(musicLoad, 60*2*1000); // Reload every 2 minutes
 
 // Projects Updater Function
 function projectsLoad() {
