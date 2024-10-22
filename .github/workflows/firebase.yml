@@ -1,4 +1,4 @@
-name: Deploy the main branch
+name: Deploy firebase functions
 on:
   push:
     branches:
