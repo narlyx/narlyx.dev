@@ -4,7 +4,7 @@ import axios from "axios";
 import cors from "cors";
 
 // Returns API data from LASTFM
-export const getMusicData = functions
+export const nowPlaying = functions
   .runWith({ secrets: ["LASTFM_TOKEN"]})
   .https.onRequest((request,response) => {
     try {
