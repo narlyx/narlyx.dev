@@ -5,16 +5,22 @@
   "main": "index.js",
   "scripts": {
     "build": "node index.js",
-    "run": "bash pythonWebServer.sh"
+    "server": "bash pythonWebServer.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/narlyx/narlyx.dev.git"
   },
-  "author": "Bunno",
+  "author": "Narlyx",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/narlyx/narlyx.dev/issues"
   },
-  "homepage": "https://github.com/narlyx/narlyx.dev#readme"
+  "homepage": "https://github.com/narlyx/narlyx.dev#readme",
+  "devDependencies": {
+    "firebase-tools": "^13.22.1"
+  },
+  "dependencies": {
+    "punycode": "^2.3.1"
+  }
 }

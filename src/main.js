@@ -162,14 +162,6 @@ function statusLoad() {
       var statusTextElement = document.getElementById("status-text");
       statusTextElement.style.display = "none";
 
-      var spotifyContainerElement =
-        document.getElementById("spotify-container");
-      spotifyContainerElement.style.display = "none";
-      var spotifyArtElement = document.getElementById("spotify-art");
-      var spotifyTitleElement = document.getElementById("spotify-title");
-      var spotifyArtistElement = document.getElementById("spotify-artist");
-      var spotifyListenElement = document.getElementById("spotify-listen");
-
       if (activities.length > 0) {
         for (i in activities) {
           var activity = activities[i];
@@ -185,23 +177,35 @@ function statusLoad() {
             statusTextElement.style.display = "";
             statusTextElement.innerText = '"' + activity.state + '" 💬';
           }
-
-          // Spotify
-          if (activity.type == 2) {
-            spotifyContainerElement.style.display = "";
-
-            spotifyArtElement.src = spotify.album_art_url;
-            spotifyTitleElement.innerText = spotify.song;
-            spotifyArtistElement.innerText = "By " + spotify.artist;
-            spotifyListenElement.href =
-              "https://open.spotify.com/track/" + spotify.track_id;
-          }
         }
       }
     });
 }
 statusLoad();
 setInterval(statusLoad, 5000);
+
+// Loading music status
+function musicLoad() {
+  fetch("https://us-central1-narlyxdev.cloudfunctions.net/getMusicData")
+    .then((responce) => responce.json())
+    .then((data) => {
+      // Elements
+      var containerElement = document.getElementById("music-container");
+      
+      var pictureElement = document.getElementById("music-picture");
+      var nameElement = document.getElementById("music-title");
+      var artistElement = document.getElementById("music-artist");
+      var urlElement = document.getElementById("music-url");
+
+      // Settings data
+      pictureElement.src = data["image"];
+      nameElement.innerText = data["name"];
+      artistElement.innerText = "By: "+data["artist"];
+      urlElement.href = data["url"];
+    });
+}
+musicLoad();
+setInterval(musicLoad, 60*2); // Reload every 2 minutes
 
 // Projects Updater Function
 function projectsLoad() {
