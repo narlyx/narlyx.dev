@@ -41,7 +41,7 @@ function musicLoad() {
       
       if (data["playing"]) {
         urlElement.innerText = "Currently listening";
-        urlElement.style.color = "chartreuse";
+        urlElement.style.color = "LimeGreen";
       } else {
         urlElement.innerText = timeAgo(data["uts"]);
         urlElement.style.color = "var(--base-color)";

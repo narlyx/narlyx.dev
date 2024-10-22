@@ -1,14 +1,14 @@
 /* Variables */:root {
-  --primary-color:rgb(255,255,255);
-  --primary-color2:rgb(69,69,69);
-  --base-color:rgb(179,179,179);
-  --background-color:rgb(15,15,15);
-  --highlight-color1:rgb(65,65,65);
-  --highlight-color2:rgb(92,92,92);
-  --scanlines-img:url("./assets/scanlines.png");
-  --background-img:url("./assets/background.gif");
-  --prefered-width:1024px;
-  --minimum-width:900px;
+  --primary-color: #78b5a0;
+  --primary-color2: rgb(69,69,69);
+  --base-color: rgb(179,179,179);
+  --background-color: rgb(15,15,15);
+  --highlight-color1: rgb(65,65,65);
+  --highlight-color2: rgb(92,92,92);
+  --scanlines-img: url("./assets/scanlines.png");
+  --background-img: url("./assets/background.gif");
+  --prefered-width: 1024px;
+  --minimum-width: 900px;
 }
 
 /* Fonts */
@@ -60,7 +60,7 @@ h1,h2,h3 {
   margin-top:1px;
   margin-bottom:3px;
 }
-h1 {
+h1,h2 {
   font-family:"PixelNES";
 }
 

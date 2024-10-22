@@ -13,7 +13,7 @@ function projectsLoad() {
           var newDiv = document.createElement("div");
 
           // Title
-          var newTitle = document.createElement("h2");
+          var newTitle = document.createElement("h3");
           newTitle.innerText = repo.name;
           newDiv.appendChild(newTitle);
 

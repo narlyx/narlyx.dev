@@ -24,10 +24,10 @@ function statusLoad() {
 
       if (status != "offline") {
         statusBoolElement.innerText = "ONLINE!";
-        statusBoolElement.style.color = "chartreuse";
+        statusBoolElement.style.color = "LimeGreen";
       } else {
         statusBoolElement.innerText = "OFFLINE.";
-        statusBoolElement.style.color = "orangered";
+        statusBoolElement.style.color = "OrangeRed";
       }
 
       // Activities
