@@ -7,6 +7,7 @@ function changelogLoad() {
       // Looping though commits
       for (i in data) {
         var commitData = data[i];
+        var splitMessage = commitData.commit.message.split(/\n(.*)/s);
 
         // Div
         var newDiv = document.createElement("div");
@@ -14,7 +15,15 @@ function changelogLoad() {
         // Message
         var newMessage = document.createElement("a");
         newMessage.href = commitData.html_url;
-        newMessage.innerText = commitData.commit.message;
+        newMessage.innerText = splitMessage[0];
+
+        // Description
+        if (splitMessage[1] != undefined) {
+          var newDescription = document.createElement("span");
+          newDescription.style.color = "var(--base-color)";
+          newDescription.innerText = "\n"+splitMessage[1];
+          newMessage.appendChild(newDescription);
+        }
 
         // Date
         var newDate = document.createElement("span");

@@ -1,10 +1,14 @@
 // Import
-import * as functions from 'firebase-functions/v1';
+import * as v1 from 'firebase-functions/v1';
+import admin from "firebase-admin";
 import axios from "axios";
 import cors from "cors";
 
+// Loading admin stuffs
+//admin.initializeApp();
+
 // Returns API data from LASTFM
-export const nowPlaying = functions
+export const nowPlaying = v1
   .runWith({ secrets: ["LASTFM_TOKEN"]})
   .https.onRequest((request,response) => {
     try {
