@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1024px;
+  margin: auto;
+}
+
+#header {
+  background-color: red;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+  background-color: green;
+}
+
+#main {
+  float: left;
+  width: 70%;
+  padding-left: 10px;
+  background-color: blue;
+}
+
+#footer {
+  background-color: yellow;
+  text-align: center;
+}
+
+@media screen and (max-width: 512px) {
+  .sidebar, .main {
+    width: 100%;
+    padding: 0;
+  }
+}
