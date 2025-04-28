@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #b3b3b3;
+  --highlight-color: #5c5c5c;
+  --highlight-color-dim: #414141;
+  --base-color: #0f0f0f;
+  --background-color: black;
+}
+
+h1, h2, h3, a {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+.box {
+  outline-color: var(--highlight-color);
+  background-color: var(--base-color);
+  animation: box-flicker 0.11s infinite;
+}
+
+@keyframes box-flicker {
+  0% {
+    outline-color: var(--highlight-color);
+  }
+  100% {
+    outline-color: var(--highlight-color-dim);
+  }
+}
