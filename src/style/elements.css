@@ -1,0 +1,36 @@
+#scrolling-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/textures/stars.gif");
+  position: fixed;
+  z-index: -2;
+  animation: bg-scroll 18s linear infinite;
+}
+
+#scan-lines {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/textures/scanlines.png");
+  position: fixed;
+  z-index: 100;
+  opacity: 0.5;
+  animation: bg-scroll 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes bg-scroll {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -150px -150px;
+  }
+}
+
+
