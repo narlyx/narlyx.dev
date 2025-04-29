@@ -29,6 +29,16 @@ body {
   text-align: center;
 }
 
+#copywrite {
+  font-size: 12px;
+  white-space: nowarp;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
 @media screen and (max-width: 800px) {
   #sidebar, #main {
     width: 100%;
