@@ -2,8 +2,10 @@
   "name": "narlyx.dev",
   "version": "0.0.0",
   "description": "Narlyx's personal website",
+  "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server 'src' --files 'src/**/*.html, src/**/*.css, src/**/*.js' --no-notify"
+    "start": "browser-sync start --server 'src' --files 'src/**/*.html, src/**/*.css, src/**/*.js' --no-notify",
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",
