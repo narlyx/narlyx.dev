@@ -44,7 +44,6 @@ function loadStatus() {
 
           // Status
           if (activity.type == 4) {
-            console.log("rah");
             statusActivity.style.display = "";
             statusActivity.innerText = '"' + activity.state + '" 💬';
           }
