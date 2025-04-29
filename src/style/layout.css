@@ -90,6 +90,11 @@ marquee {
   width: 100%;
 }
 
+#ufo-container {
+  padding: 20px;
+  text-align: center;
+}
+
 #scrolling-bg {
   display: block;
   width: 100%;
