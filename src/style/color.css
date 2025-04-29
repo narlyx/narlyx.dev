@@ -1,5 +1,6 @@
 :root {
   --primary-color: #ffffff;
+  --primary-color-dim: #454545;
   --secondary-color: #b3b3b3;
   --highlight-color: #5c5c5c;
   --highlight-color-dim: #414141;
@@ -31,5 +32,110 @@ hr {
   }
   100% {
     outline-color: var(--highlight-color-dim);
+  }
+}
+
+.flicker-pattern1 {
+  animation: flicker1 2s infinite;
+}
+
+.flicker-pattern2 {
+  animation: flicker1 2.3s infinite;
+}
+
+.flicker-pattern3 {
+  animation: flicker2 5s infinite;
+}
+
+.flicker-pattern4 {
+  animation: flicker1 7s infinite;
+}
+
+.flicker-pattern5 {
+  animation: flicker1 5s infinite;
+}
+
+.flicker-pattern6 {
+  animation: flicker2 10s infinite;
+}
+
+@keyframes flicker1 {
+  0% {
+    color: var(--primary-color);
+  }
+  34% {
+    color: var(--primary-color)
+  }
+  35% {
+    color: var(--primary-color-dim)
+  }
+  36% {
+    color: var(--primary-color)
+  }
+  96% {
+    color: var(--primary-color)
+  }
+  97% {
+    color: var(--primary-color-dim)
+  }
+  98% {
+    color: var(--primary-color)
+  }
+  99% {
+    color: var(--primary-color-dim)
+  }
+  100% {
+    color: var(--primary-color)
+  }
+}
+
+@keyframes flicker2 {
+  0% {
+    color: var(--primary-color)
+  }
+  93% {
+    color: var(--primary-color)
+  }
+  93.5% {
+    color: var(--primary-color-dim)
+  }
+  94% {
+    color: var(--primary-color)
+  }
+  94.5% {
+    color: var(--primary-color-dim)
+  }
+  95% {
+    color: var(--primary-color)
+  }
+  95.5% {
+    color: var(--primary-color-dim)
+  }
+  96% {
+    color: var(--primary-color)
+  }
+  96.5% {
+    color: var(--primary-color-dim)
+  }
+  97% {
+    color: var(--primary-color)
+  }
+  97.5% {
+    color: var(--primary-color-dim)
+  }
+  98% {
+    color: var(--primary-color)
+  }
+  98.5% {
+    color: var(--primary-color-dim)
+  }
+  99% {
+    color: var(--primary-color)
+  }
+  99.5% {
+    color: var(--primary-color-dim)
+  }
+  100% {
+    color: var(--primary-color)
   }
 }

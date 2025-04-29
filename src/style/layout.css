@@ -15,17 +15,17 @@ body {
 
 #sidebar {
   float: left;
-  width: 30%;
+  width: 27%;
   box-sizing: border-box;
 }
 
 #main {
   float: left;
-  width: 70%;
+  width: 73%;
   padding-left: 7px;
 }
 
-#footer {
+#header, #footer {
   text-align: center;
 }
 
