@@ -8,6 +8,10 @@
   --background-color: black;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
 h1, h2, h3, a, b {
   color: var(--primary-color);
 }
