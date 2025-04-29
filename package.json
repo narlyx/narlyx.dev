@@ -4,7 +4,7 @@
   "description": "Narlyx's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src --port=3000 --entry-file=/404.html",
+    "start": "live-server src --port=3000 --entry-file=/not_found.html",
     "build": "node index.js"
   },
   "repository": {
