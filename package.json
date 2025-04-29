@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/narlyx/narlyx.dev#readme",
   "devDependencies": {
-    "browser-sync": "^3.0.4"
+    "browser-sync": "^3.0.4",
+    "firebase-tools": "^13.22.1"
   }
 }

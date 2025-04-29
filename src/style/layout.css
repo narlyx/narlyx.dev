@@ -86,6 +86,10 @@ marquee {
   text-align: center;
 }
 
+#music-picture {
+  width: 100%;
+}
+
 #scrolling-bg {
   display: block;
   width: 100%;

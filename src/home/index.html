@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/main.css" />
     <script src="./status.js"></script>
     <script src="./changelog.js"></script>
+    <script src="./music.js"></script>
   </head>
 
   <body>
@@ -38,6 +39,7 @@
         <div id="status-container">
           <i>I'm...</i>
           <span id="status-bool">thinking...</span>
+          <hr>
           <p id="status-activity"></p>
           <p id="status-text"></p>
           <p id="offline-text">(Hiding from you.)</p>
@@ -68,6 +70,12 @@
         <a href="https://discord.com/users/522955923107348480">> Discord</a>
         <br>
         <a href="mailto:shout@narlyx.dev">> E-mail</a>
+      </div>
+      <div class="box" id="music-container">
+        <img id="music-picture">
+        <p id="music-title"></p>
+        <p id="music-artist"></p>
+        <a id="music-url"></a>
       </div>
     </div>
 
@@ -103,6 +111,7 @@
         <p>[ ] Last.fm status</p>
         <p>[x] <s>Changelog</s></p>
         <p>[ ] Throw away Firebase and never look back</p>
+        <p>[ ] Random splash/quotes text</p>
       </div>
       <!-- Changelog -->
       <div class="box">
