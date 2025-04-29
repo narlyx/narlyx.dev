@@ -1,26 +1,22 @@
 {
   "name": "narlyx.dev",
-  "version": "1.0.0",
-  "description": "My personal website",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Narlyx's personal website",
   "scripts": {
-    "build": "node index.js",
-    "server": "bash pythonWebServer.sh"
+    "start": "browser-sync start --server 'src' --files 'src/**/*.html, src/**/*.css, src/**/*.js' --no-notify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/narlyx/narlyx.dev.git"
   },
-  "author": "Narlyx",
-  "license": "ISC",
+  "author": "Narlyx Dactux",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/narlyx/narlyx.dev/issues"
   },
   "homepage": "https://github.com/narlyx/narlyx.dev#readme",
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "firebase-tools": "^13.22.1"
-  },
-  "dependencies": {
-    "punycode": "^2.3.1"
   }
 }
