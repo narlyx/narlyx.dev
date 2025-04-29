@@ -64,6 +64,12 @@ marquee {
   transform: translate(-50%, -50%);
 }
 
+#changelog-container {
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 #scrolling-bg {
   display: block;
   width: 100%;
