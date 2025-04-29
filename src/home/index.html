@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <link rel="stylesheet" href="../style/main.css" />
+    <script src="./status.js"></script>
     <script src="./changelog.js"></script>
   </head>
 
@@ -29,6 +30,18 @@
 
     <!-- Side bar content -->
     <div id="sidebar">
+      <!-- User status -->
+      <div class="box">
+        <div id="pfp-container">
+          <img id="pfp">
+        </div>
+        <div id="status-container">
+          <i>I'm...</i>
+          <span id="status-bool">thinking...</span>
+          <p id="status-activity"></p>
+          <p id="status-text"></p>
+        </div>
+      </div>
       <!-- Site navigation -->
       <div class="box">
         <h2>Navigation</h2>
@@ -84,10 +97,10 @@
         <p>[ ] Find a will to live <i>(top priority)</i></p>
         <p>[ ] Photo gallery</p>
         <p>[ ] Perchance a journal</p>
-        <s>[x] Welcome page</s>
-        <p>[ ] Discord status</p>
+        <p>[x] <s>Welcome page</s></p>
+        <p>[x] <s>Discord status</s></p>
         <p>[ ] Last.fm status</p>
-        <s>[x] Changelog</s>
+        <p>[x] <s>Changelog</s></p>
         <p>[ ] Throw away Firebase and never look back</p>
       </div>
       <!-- Changelog -->

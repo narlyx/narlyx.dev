@@ -51,6 +51,7 @@ body {
   border-radius: 1px;
   outline: 1px solid;
   margin-bottom: 7px;
+  overflow: hidden;
 }
 
 marquee {
@@ -66,8 +67,23 @@ marquee {
 
 #changelog-container {
   max-height: 250px;
-  overflow: hidden;
   overflow-y: scroll;
+}
+
+#pfp-container {
+  width: 25%;
+  float: left;
+}
+
+#pfp {
+  width: 100%
+}
+
+#status-container {
+  width: 75%;
+  float: left;
+  padding-left: 5px;
+  text-align: center;
 }
 
 #scrolling-bg {
