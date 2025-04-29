@@ -12,7 +12,7 @@ h1, h2, h3, a, b {
   color: var(--primary-color);
 }
 
-p, i {
+p, i, s {
   color: var(--secondary-color);
 }
 
