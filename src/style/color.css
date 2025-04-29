@@ -15,6 +15,10 @@ p {
   color: var(--secondary-color);
 }
 
+hr {
+  color: var(--highlight-color-dim);
+}
+
 .box {
   outline-color: var(--highlight-color);
   background-color: var(--base-color);

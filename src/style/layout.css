@@ -29,13 +29,20 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 800px) {
   #sidebar, #main {
     width: 100%;
     padding: 0;
   }
+
   #main {
     margin-left: 0px
+  }
+
+  #sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }
 

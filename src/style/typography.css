@@ -1,7 +1,41 @@
+@font-face {
+  font-family: "W95FA";
+  src: url("../asset../assets/fonts/W95FA.eot?") format("eot"),url("../assets/fonts/W95FA.woff") format("woff"),url("../assets/fonts/W95FA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PixelNES";
+  src: url("../assets/fonts/Pixel_NES.eot?") format("eot"),url("../assets/fonts/Pixel_NES.woff") format("woff"),url("../assets/fonts/Pixel_NES.ttf") format("truetype"),url("../assets/fonts/Pixel_NES.svg#PixelNES") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cattedrale";
+  src: url("../assets/fonts/Cattedrale.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "W95FA";
+}
+
 a:link {
   text-decoration: none;
 }
 
 a:hover, a:active {
   text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: "PixelNES";
+}
+
+hr {
+  margin-top: 3px;
+  margin-bottom: 7px;
 }
