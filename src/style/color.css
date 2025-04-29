@@ -8,11 +8,11 @@
   --background-color: black;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, b {
   color: var(--primary-color);
 }
 
-p {
+p, i {
   color: var(--secondary-color);
 }
 
