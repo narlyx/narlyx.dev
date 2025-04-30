@@ -25,8 +25,6 @@ function loadMusic() {
     .then((responce) => responce.json())
     .then((data) => {
       // Elements
-      var containerElement = document.getElementById("music-container");
-
       var pictureElement = document.getElementById("music-picture");
       var nameElement = document.getElementById("music-title");
       var artistElement = document.getElementById("music-artist");
@@ -43,7 +41,7 @@ function loadMusic() {
         urlElement.style.color = "LimeGreen";
       } else {
         urlElement.innerText = timeAgo(data["uts"]);
-        urlElement.style.color = "var(--base-color)";
+        urlElement.style.color = "var(--secondary-color)";
       }
     });
 }

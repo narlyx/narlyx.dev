@@ -33,6 +33,7 @@ function loadStatus() {
       var statusActivity = document.getElementById("status-activity");
       var statusText = document.getElementById("status-text");
       statusActivity.style.display = "none";
+      statusText.innerText = "Currently thoughtless...";
       if (activities.length > 0) {
         for (i in activities) {
           // Current activity
@@ -47,8 +48,6 @@ function loadStatus() {
           // Status
           if (activity.type == 4) {
             statusText.innerText = '"' + activity.state + '" 💬';
-          } else {
-            statusText.innerText = "Currently thoughtless...";
           }
         }
       }
