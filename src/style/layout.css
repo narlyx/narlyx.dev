@@ -64,10 +64,6 @@ body {
   overflow: hidden;
 }
 
-marquee {
-  line-height: 0;
-}
-
 .absolute-center {
   position: absolute;
   top: 50%;

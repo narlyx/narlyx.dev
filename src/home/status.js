@@ -54,3 +54,4 @@ function loadStatus() {
     });
 }
 loadStatus();
+setInterval(loadStatus, 60000);

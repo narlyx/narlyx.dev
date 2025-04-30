@@ -46,4 +46,4 @@ function loadMusic() {
     });
 }
 loadMusic();
-setInterval(loadMusic, 60 * 2 * 1000); // Reload every 2 minutes
+setInterval(loadMusic, 120000);
