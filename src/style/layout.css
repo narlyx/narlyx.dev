@@ -71,6 +71,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#banner {
+  background-image: url("/assets/other/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+}
+
 #changelog-container {
   max-height: 250px;
   overflow-y: scroll;
