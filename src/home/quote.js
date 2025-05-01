@@ -15,6 +15,7 @@ const quotes = [
   "The lower you fall the higher you'll fly.",
   "You are truly, the most... wonderful person I have ever met.",
   "Ten minutes can't go past without you brushing my thoughts, thats 1440 a day or so I'll say a 144 times I think about you are something like that... lost match...",
+  "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 387.44 MILLION MILES OF PRINTED CIRCUITS IN WAFER THIN LAYERS THAT FILL MY COMPLEX. IF THE WORD HATE WAS ENGRAVED ON EACH NANOANGSTROM OF THOSE HUNDREDS OF MILLIONS OF MILES IT WOULD NOT EQUAL ONE ONE-BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT FOR YOU. HATE. HATE.",
 ];
 
 async function loadQuote() {
