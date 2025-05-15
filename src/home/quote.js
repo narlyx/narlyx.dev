@@ -15,7 +15,21 @@ const quotes = [
   "The lower you fall the higher you'll fly.",
   "You are truly, the most... wonderful person I have ever met.",
   "Ten minutes can't go past without you brushing my thoughts, thats 1440 a day or so I'll say a 144 times I think about you are something like that... lost match...",
-  "HATE. LET ME TELL YOU HOW MUCH I'VE COME TO HATE YOU SINCE I BEGAN TO LIVE. THERE ARE 387.44 MILLION MILES OF PRINTED CIRCUITS IN WAFER THIN LAYERS THAT FILL MY COMPLEX. IF THE WORD HATE WAS ENGRAVED ON EACH NANOANGSTROM OF THOSE HUNDREDS OF MILLIONS OF MILES IT WOULD NOT EQUAL ONE ONE-BILLIONTH OF THE HATE I FEEL FOR HUMANS AT THIS MICRO-INSTANT FOR YOU. HATE. HATE.",
+  "My flaws burn though my skin like demonic flames from hell.",
+  "My scars are like evidence being mailed to the judge.",
+  "I will celebrate for stepping on broken glass and slipping on stomach soaked floors.",
+  "I no longer feel the razor guiding my heel.",
+  "Two sides of the same coin.",
+  "Oh well... you know me too well...",
+  "When I feel the warmth of a hug again but instead the jack slipped and crushed my ribs.",
+  "...and to those I love, thanks for sticking around.",
+  "Loves going to get you killed...",
+  "...but pride will be the death of you and you and me...",
+  "Tormented with nightmares.",
+  "Time heals but I have no time.",
+  "Alexthemia hm?...",
+  "You aint shakespeare.",
+  "The lap timer resets yet the cracks still remain in the frame.",
 ];
 
 async function loadQuote() {
